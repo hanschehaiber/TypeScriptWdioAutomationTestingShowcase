@@ -1,1 +1,1 @@
-# TypescriptWdioAutomationTestingShowcase
+# TypeScriptWdioAutomationTestingShowcase
