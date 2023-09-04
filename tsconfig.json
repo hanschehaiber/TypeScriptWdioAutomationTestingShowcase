@@ -1,13 +1,15 @@
 {
-    "compilerOptions": {
-        "moduleResolution": "node",
-        "module": "ESNext",
-        "types": [
-            "node",
-            "@wdio/globals/types",
-            "expect-webdriverio",
-            "@wdio/mocha-framework"
-        ],
-        "target": "es2022"
-    }
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "types": [
+      "node",
+      "@wdio/globals/types",
+      "expect-webdriverio",
+      "@wdio/mocha-framework"
+    ],
+    "target": "es2022"
+  }
 }

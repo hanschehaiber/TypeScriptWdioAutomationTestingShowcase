@@ -1,6 +1,4 @@
-import { ChainablePromiseElement } from "webdriverio";
-
-import BasePage from "./base.page.js";
+import BasePage from "./base.page.ts";
 
 /**
  * sub page containing specific selectors and methods for a specific page

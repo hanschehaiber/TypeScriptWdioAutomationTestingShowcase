@@ -1,4 +1,4 @@
-import BasePage from "./base.page.js";
+import BasePage from "./base.page.ts";
 
 export class ProductsPage extends BasePage {
   async getFirstProductPrice() {

@@ -1,4 +1,4 @@
-import ProductsPage from "../pagobjects/products.page.js";
+import ProductsPage from "../pagobjects/products.page.ts";
 
 describe("Cause Demo", () => {
   it("Purchase an item", async () => {
