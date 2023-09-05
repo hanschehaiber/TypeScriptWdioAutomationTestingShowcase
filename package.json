@@ -12,6 +12,7 @@
     "wdio-chromedriver-service": "^8.1.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+    "wdio": "wdio run ./wdio.conf.ts",
+    "sauce-demo": "wdio run ./wdio.conf.ts --spec ./test/com/saucedemo/specs/test.saucedemo.e2e.ts"
   }
 }
