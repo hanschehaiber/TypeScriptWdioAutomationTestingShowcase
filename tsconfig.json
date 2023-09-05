@@ -3,7 +3,7 @@
     "allowImportingTsExtensions": true,
     "noEmit": true,
     "moduleResolution": "node",
-    "module": "ESNext",
+    "module": "ES2022",
     "types": [
       "node",
       "@wdio/globals/types",
