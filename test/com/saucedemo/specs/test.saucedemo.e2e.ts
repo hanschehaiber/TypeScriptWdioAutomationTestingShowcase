@@ -2,6 +2,8 @@ import ProductsPage from "../pagobjects/products.page.ts";
 import LoginPage from "../pagobjects/login.page.ts";
 import ShoppingCartPage from "../pagobjects/shopping.cart.page.ts";
 import CheckoutInfoPage from "../pagobjects/checkout.info.page.ts";
+import CheckoutOverviewPage from "../pagobjects/checkout.overview.page.ts";
+import CheckoutCompletePage from "../pagobjects/checkout.complete.page.ts";
 
 describe("Cause Demo", () => {
   it("Purchase an item", async () => {
@@ -27,6 +29,15 @@ describe("Cause Demo", () => {
       postalCode
     );
 
-    await browser.pause(5000);
+    await expect(CheckoutOverviewPage.subtotal).toHaveTextContaining(
+      firstProductPrice
+    );
+
+    await CheckoutOverviewPage.finish.click();
+    const expectedMessage =
+      "Your order has been dispatched, and will arrive just as fast as the pony can get there!";
+    await expect(CheckoutCompletePage.completeText).toHaveTextContaining(
+      expectedMessage
+    );
   });
 });
