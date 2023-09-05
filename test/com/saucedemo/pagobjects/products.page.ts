@@ -6,10 +6,6 @@ export class ProductsPage extends BasePage {
       .$("[class='inventory_item_price']")
       .getText();
   }
-
-  public printSomething() {
-    console.log("PRINTING SOMETHING");
-  }
 }
 
 export default new ProductsPage();
