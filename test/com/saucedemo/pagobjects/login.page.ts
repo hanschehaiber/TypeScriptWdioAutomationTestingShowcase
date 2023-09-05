@@ -1,20 +1,20 @@
 import BasePage from "./base.page.ts";
 
-export class LoginPage extends BasePage {
-    get username() {
-    return  $("[data-test='username']");
+class LoginPage extends BasePage {
+  get username() {
+    return $("[data-test='username']");
   }
-   get password() {
+  get password() {
     return $("#password");
   }
-   get loginButton() {
+  get loginButton() {
     return $("#login-button");
   }
 
   public async signIn(username: string, password: string) {
     await this.username.setValue(username);
     await this.password.setValue(password);
-    await this.loginButton.click()
+    await this.loginButton.click();
   }
 }
 
