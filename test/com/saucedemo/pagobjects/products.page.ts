@@ -1,6 +1,6 @@
 import BasePage from "./base.page.ts";
 
-export class ProductsPage extends BasePage {
+class ProductsPage extends BasePage {
   get inventoryList() {return $$("[class='inventory_list'] > div")}
   async getFirstProductPrice() {
     return await this.inventoryList[0]
@@ -8,7 +8,7 @@ export class ProductsPage extends BasePage {
       .getText();
   }
   async addProductToCartByIndex(index: number) {
-    await this.inventoryList[index].$("#add-to-cart-sauce-labs-backpack")
+    await this.inventoryList[index].$("#add-to-cart-sauce-labs-backpack").click()
   }
 }
 
